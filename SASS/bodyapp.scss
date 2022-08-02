@@ -1,5 +1,25 @@
 @use './util/' as u;
 
 body {
-    background-color: black;
+    background-color: var(--dark-blue);
+}
+
+.main {
+    background-color: var(--dark-grey);
+    width: u.em(400);
+    height: u.em(300);
+    border-radius: u.em(14);
+
+    .quote-box {
+        text-align: center;
+
+        p {
+            color: var(--neon-green);
+            font-weight: 200;
+            font-family: 'Manrope', sans-serif;
+            font-size: u.em(10);
+            letter-spacing: u.em(3);
+            text-transform: uppercase;
+        }
+    }
 }

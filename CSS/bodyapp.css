@@ -1,5 +1,31 @@
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grey-blue: hsl(217, 19%, 38%);
+  --dark-grey: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+
 body {
-  background-color: black;
+  background-color: var(--dark-blue);
+}
+
+.main {
+  background-color: var(--dark-grey);
+  width: 25em;
+  height: 18.75em;
+  border-radius: 0.875em;
+}
+.main .quote-box {
+  text-align: center;
+}
+.main .quote-box p {
+  color: var(--neon-green);
+  font-weight: 200;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.625em;
+  letter-spacing: 0.1875em;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=bodyapp.css.map */

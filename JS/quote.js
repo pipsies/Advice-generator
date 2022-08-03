@@ -12,9 +12,22 @@ fetch("https://api.adviceslip.com/advice")
     return response.json();
 }).then(adviceData => {
     const adviceObj = adviceData.slip;
-    quoteDiv.innerHTML = `<h1>${adviceObj.advice}</h1>`;
+    quoteDiv.innerHTML = `<h1>"${adviceObj.advice}"</h1>`;
     DivID.innerHTML = `<p>advice #${adviceObj.id}</p>`;
     
 });
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
 

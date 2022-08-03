@@ -2,24 +2,76 @@
 
 body {
     background-color: var(--dark-blue);
+    font-family: 'Manrope', sans-serif;
 }
 
 .main {
     background-color: var(--dark-grey);
     width: u.em(400);
-    height: u.em(300);
+    height: u.em(230);
     border-radius: u.em(14);
+    justify-content: center;
+    margin: auto;
+    align-items: center; 
+  
 
-    .quote-box {
-        text-align: center;
+}
 
-        p {
-            color: var(--neon-green);
-            font-weight: 200;
-            font-family: 'Manrope', sans-serif;
-            font-size: u.em(10);
-            letter-spacing: u.em(3);
-            text-transform: uppercase;
-        }
+.quote-box {
+    text-align: center;
+    margin-top: u.em(250);
+    
+    .divider {
+        width: u.em(300);
+        margin-bottom: u.em(15);
+        padding-top: u.em(12);
     }
+ 
+
+    div#advice-num {
+        
+        color: var(--neon-green);
+        font-weight: 200;
+        font-size: u.em(10);
+        letter-spacing: u.em(3);
+        text-transform: uppercase;
+        padding-top: u.em(50);
+       
+    }
+
+    div.btn{
+
+        #getQuote {
+            width: u.em(58);
+            height: u.em(58);
+            border-radius: u.em(30);
+            background-color: var(--neon-green);
+            border-style: none;
+
+            .dice {
+               width: u.em(22);
+               height: u.em(24);
+               
+            }
+        }
+            
+        #getQuote:hover{
+            box-shadow: 0 0 25px 10px hsl(150, 100%, 66%);
+        }
+        
+    }
+
+    div#get-advice {
+        color: var(--grey-blue);
+        font-size: u.em(11);
+        height: u.em(155);
+        width: u.em(510);
+        line-height: u.em(38);
+        margin-left: u.em(30);
+        margin-top: 0;
+        
+
+        
+    }
+
 }

@@ -1,31 +1,65 @@
 :root {
   --light-cyan: hsl(193, 38%, 86%);
   --neon-green: hsl(150, 100%, 66%);
-  --grey-blue: hsl(217, 19%, 38%);
+  --grey-blue: hsl(217, 46%, 80%);
   --dark-grey: hsl(217, 19%, 24%);
   --dark-blue: hsl(218, 23%, 16%);
 }
 
 body {
   background-color: var(--dark-blue);
+  font-family: "Manrope", sans-serif;
 }
 
 .main {
   background-color: var(--dark-grey);
   width: 25em;
-  height: 18.75em;
+  height: 14.375em;
   border-radius: 0.875em;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
 }
-.main .quote-box {
+
+.quote-box {
   text-align: center;
+  margin-top: 15.625em;
 }
-.main .quote-box p {
+.quote-box .divider {
+  width: 18.75em;
+  margin-bottom: 0.9375em;
+  padding-top: 0.75em;
+}
+.quote-box div#advice-num {
   color: var(--neon-green);
   font-weight: 200;
-  font-family: "Manrope", sans-serif;
   font-size: 0.625em;
   letter-spacing: 0.1875em;
   text-transform: uppercase;
+  padding-top: 3.125em;
+}
+.quote-box div.btn #getQuote {
+  width: 3.625em;
+  height: 3.625em;
+  border-radius: 1.875em;
+  background-color: var(--neon-green);
+  border-style: none;
+}
+.quote-box div.btn #getQuote .dice {
+  width: 1.375em;
+  height: 1.5em;
+}
+.quote-box div.btn #getQuote:hover {
+  box-shadow: 0 0 25px 10px hsl(150deg, 100%, 66%);
+}
+.quote-box div#get-advice {
+  color: var(--grey-blue);
+  font-size: 0.6875em;
+  height: 9.6875em;
+  width: 31.875em;
+  line-height: 2.375em;
+  margin-left: 1.875em;
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=bodyapp.css.map */
